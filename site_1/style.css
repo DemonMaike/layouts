@@ -1,0 +1,62 @@
+@import url('normalize.css');
+
+/* Conatiner block */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #007765;
+}
+
+.nav-line {
+    height: 84px;
+}
+
+.container {
+    padding:20px 20%;
+}
+
+.nav-line__logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Have a problem, non-adaptive */
+.nav-line__space {
+    display: inline-block;
+    width: 100px;
+}
+
+.nav-line__menu {
+    display: inline-block;
+    float: right;
+    font-size: 24px;
+}
+
+.nav-line__menu ul {
+    list-style-type: none;
+}
+
+.nav-line__menu li {
+    margin-left: 9px;
+    display: inline;
+}
+
+.nav-line__menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Pipernet banner */
+
+.pipernet {
+    height: 401px;
+    background-image:url('./media/image-15.png');
+}
+
+.pipernet__text {
+    font-size: 80px;
+    color: #fff;
+    
+}
