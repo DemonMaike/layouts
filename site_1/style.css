@@ -1,62 +1,210 @@
-@import url('normalize.css');
+@import url('./normalize.css');
 
-/* Conatiner block */
+/* Base setting */
+
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-header {
-    background-color: #007765;
-}
-
-.nav-line {
-    height: 84px;
-}
-
-.container {
-    padding:20px 20%;
-}
-
-.nav-line__logo {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-/* Have a problem, non-adaptive */
-.nav-line__space {
-    display: inline-block;
-    width: 100px;
-}
-
-.nav-line__menu {
-    display: inline-block;
-    float: right;
     font-size: 24px;
 }
 
-.nav-line__menu ul {
-    list-style-type: none;
+/* ____________ */
+
+
+/* Header */
+
+header {
+    height: 84px;
+    background-color: #007765;
 }
 
-.nav-line__menu li {
-    margin-left: 9px;
+.header {
+    height: inherit;
+    min-height: 10%;
+    margin: 0 auto;
+    padding: 0 450px;
+    min-width: 100px;
+
+}
+
+.header__logo {
+    height: inherit;
+    display: inline-block;
+
+
+}
+
+.header__logo img {
+     padding: 10% 0;
+     max-width: 100%;
+}
+
+
+.header__menu {
+    display: inline;
+    float: right;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.header__menu ul{
+    height: inherit;
+}
+
+.header__menu a {
+    text-decoration: none;
+}
+
+.header__menu li {
+    color: #fff;
     display: inline;
 }
 
-.nav-line__menu a {
-    text-decoration: none;
+/* _________ */
+
+/* Banner_1 */
+
+.banner_1 {
+    position: relative;
+    display: flow-root;
+    background-image: url(./media/image-15.png);
+    background-size: cover;
+    background-position: center;
+    min-width: 800px;
+    height: 403px;
+    color: #fff;
+    text-align: center;
+}
+
+.banner_1 h1 {
+    margin-top: 160px;
+    font-size: 72px;
+
+}
+
+/* __________ */
+
+/* The problem */
+
+.the_problem {
+    position: relative;
+    display: block;
+    height: 719px;
+    text-align: center;
+    max-width: 100%;
+
+}
+
+.the_problem__title {
+    color:#007765;
+    font-size: 54px;
+}
+
+.the_problem__text {
+    
+    font-size: 32px;
+}
+
+.the_problem__text span {
+    font-weight: bold;
+}
+
+/* ___________ */
+
+/* banner_2 */
+
+.banner_2 {
+    background-image: url(./media/Hero-1.png);
+    background-size: cover;
+    background-position: center;
+    height: 403px;
     color: #fff;
 }
 
-/* Pipernet banner */
+/* ___________ */
 
-.pipernet {
-    height: 401px;
-    background-image:url('./media/image-15.png');
+/* Solution */
+
+.solution__title {
+    color:#007765;
+    font-size: 54px;
 }
 
-.pipernet__text {
-    font-size: 80px;
+
+.solution__text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.solution__text img {
+    float: left;
+    margin-right: 48px;
+}
+
+/* ___________ */
+
+/* The Team */
+
+.the_team {
+    height: 845px;
+    background-color: #EEE;
+    text-align: center;
+}
+
+.the_team__row_1 {
+    padding-left: 45px;
+}
+
+.the_team__row_2 {
+    padding-right: 35px;
+}
+
+.row_1__item_1 {
+    display: inline-block;
+    padding: 50px;
+}
+
+.row_1__item_2 {
+    display: inline-block;
+    padding: 50px;
+}
+
+.row_1__item_3 {
+    display: inline-block;
+    padding: 50px;
+}
+
+
+.row_2__item_1 {
+    display: inline-block;
+    padding: 50px;
+}
+
+.row_2__item_2 {
+    display: inline-block;
+    padding: 50px;
+}
+
+.row_2__item_3 {
+    display: inline-block;
+    padding: 50px;
+}
+
+/* ___________ */
+
+/* Footer */
+
+footer {
+    display: flow-root;
+    height: 176px;
     color: #fff;
+    background-color:#333 ;
+    padding-bottom: 3%;
+}
+
+footer p {
+    width: 540px;
+    text-align: center;
+    padding: 50px 0 0 250px;
     
 }
