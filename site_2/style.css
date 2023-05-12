@@ -1,0 +1,174 @@
+/* @import url('./normalize.css'); */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    height: 72px;
+    padding: 0 5%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header button {
+    background-color: white;
+    border-color: black;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    padding: 14px 20px;
+    margin-right: 27px;
+}
+
+.header__menu {
+    display: flex;
+}
+
+/* BANNER */
+.banner {
+    height: 362px;
+    background-image: url(./static/Restaurant/d42ea9bbf7aff297c2e1eb5e5f3b7fa6-w1080-87.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner__discription {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: white;
+    height: 60%;
+    width: 35%;
+    margin: 84px;
+    text-align: center;
+
+
+}
+
+.discription__title {
+font-size: 36px;
+font-weight: 600;
+display: flex;
+align-items: flex-end;
+margin: 0 auto;
+max-width: 100%;
+}
+
+
+.banner__comment {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.comment__items {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+.items__kitchen {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 3%;
+    
+}
+
+.items__time {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 3%;
+    color: white;
+    background: #262626;
+    border-radius: 16px;
+}
+
+
+/* NAVIGATE */
+
+.nav {
+    height: 80px;
+}
+
+.nav ul {
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.nav li {
+    height: inherit;
+    display: inherit;
+    align-items: center;
+    color: #626262;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 3%;
+    
+}
+
+.nav li:hover {
+    color: #327430;;
+}
+
+/* MENU */
+
+.menu_title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 56px;
+    padding-bottom: 32px;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+.menu__item {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+    width: 45.9999%;
+    justify-content: space-between;
+    margin-bottom: 49px;
+    
+}
+
+.item__discription {
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3% 2%;
+}
+
+.discription__price {
+    font-weight: 700;
+}
+
+
+.item__photo {
+    display: inherit;
+}
+
+.footer {
+    background-color: #262626;
+}
