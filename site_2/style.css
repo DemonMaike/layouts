@@ -1,11 +1,22 @@
-/* @import url('./normalize.css'); */
+/* BASE SETTING */
+
+@import url('./normalize.css');
 body {
     font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .container {
-
+    padding: 0 10%;
 }
+
+
+
 
 /* HEADER */
 .header {
@@ -32,23 +43,24 @@ body {
 
 /* BANNER */
 .banner {
-    height: 362px;
+    display: flex;
+    height: 450px;
     background-image: url(./static/Restaurant/d42ea9bbf7aff297c2e1eb5e5f3b7fa6-w1080-87.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
 }
+
 
 .banner__discription {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: space-around;
     background-color: white;
-    height: 60%;
-    width: 35%;
-    margin: 84px;
+    width: 386px;    
     text-align: center;
-
-
+    height: 204px;
 }
 
 .discription__title {
@@ -57,7 +69,6 @@ font-weight: 600;
 display: flex;
 align-items: flex-end;
 margin: 0 auto;
-max-width: 100%;
 }
 
 
@@ -70,7 +81,7 @@ max-width: 100%;
 .comment__items {
     display: flex;
     justify-content: space-between;
-    padding: 5% 10%;
+    padding: 0 30px;
 }
 
 .items__kitchen {
@@ -169,6 +180,90 @@ max-width: 100%;
     display: inherit;
 }
 
+/* FOOTER */
+
 .footer {
     background-color: #262626;
+    color: white;
+}
+
+.footer__logo {
+    height: 116px;
+}
+
+.footer__logo img {
+    padding: 56px 0 46px 0;
+}
+
+.footer__menu {
+    display: flex;
+    padding-top: 32px;
+    /* justify-content: space-between; */
+}
+
+.menu__column {
+    width: 33.333%;
+}
+
+.menu__tag {
+    padding-top: 10%;
+    font-size: 24px;
+}
+
+.menu__social {
+    padding-right: 5%;
+}
+
+.menu__social img {
+    width: 43px;
+}
+
+
+.menu__column li {
+    padding-bottom: 10%;
+}
+
+.footer__menu select {
+    background: #3B3B3B;
+    border-radius: 2px;
+    border: none;
+    width: 227px;
+    height: 40px;
+    color: white;
+}
+
+.footer__apps {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__apps img {
+    padding: 3%;
+}
+
+.footer__etc {
+    display: flex;
+    height: 93px;
+    align-items: center;
+}
+
+.footer__etc div {
+    width: 33.3333%;
+}
+
+
+@media screen and (max-width:780px) {
+    .container {
+        padding: 1%;
+    }
+
+    .banner {
+
+    }
+
+    .menu__item {
+        width: 100%;
+
+    }
+
 }
